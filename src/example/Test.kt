@@ -1,6 +1,8 @@
+package example
+
 data class Item(val id: Int,
-    val name: String,
-    val quantity: Int){
+                val name: String,
+                val quantity: Int){
     override fun toString(): String {
         return "Id предмета: $id\nИмя: $name\nКоличество: $quantity\n"
     }
@@ -17,7 +19,7 @@ class Person(name: String): Human(name){
     }
 }
 fun main(){
-//    println(age)
+//    println(example.age)
     age = 45
     println(age)
     age = -345
@@ -28,7 +30,7 @@ fun main(){
     println(betterSword.toString())//
     val(id, name,quantity)=betterSword
     println("Id предмета: $id\nИмя: $name\nКоличество: $quantity\n")
-//    val pavel: Human = Human(name = "Pavel")
+//    val pavel: example.Human = example.Human(name = "Pavel")
     val denis: Person = Person(name="Denis")
     val maksim: Human = Person(name="Maksim")
     denis.hello()
