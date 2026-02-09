@@ -2,6 +2,8 @@ package resources
 
 class ResourceManager {
     private val resources = mutableListOf<OutpostResource>()
+    fun getAll(): List<OutpostResource> = resources.toList()
+
     fun add(resource: OutpostResource){
         resources.add(resource)
         println("Добавлен ресурс: ${resource.name}")
