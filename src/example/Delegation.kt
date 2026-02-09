@@ -42,12 +42,13 @@ class User {
 }
 
 fun main() {
-    val max = InstantMessenger(programName = "MAX")
-    val photoCamera = PhotoCamera()
-    val yotaPhone = SmartPhone(name = "YotaPhone ", m = max, p=photoCamera)
-    yotaPhone.sendVideoMessage()
-    yotaPhone.sendTextMessage()
     counter = 1
     counter=5
+    val max = InstantMessenger(programName = "MAX")
+    val photoCamera = PhotoCamera()
+    val yotaPhone = SmartPhone(name = "YotaPhone ", m = max)
+    yotaPhone.sendVideoMessage()
+    yotaPhone.sendTextMessage()
+
 
 }
